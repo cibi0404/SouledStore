@@ -18,13 +18,13 @@
 
     <!-- Header Section -->
     <header  class="p-2 sticky top-0 z-10 bg-white shadow-md">
-        <div class="flex justify-between items-center text-black">
+        <div class="flex flex-wrap justify-between items-center gap-4 text-black">
             <h2 class="text-4xl font-bold">Souled Store</h2>
-            <ul class="flex gap-10 p-4">
+            <ul class="flex flex-wrap justify-center gap-4 md:gap-8">
                 <li><a href="#Home" class="hover:border-b-2 hover:border-black transition duration-300">Home</a></li>
                 <li><a href="#New" class="hover:border-b-2 hover:border-black transition duration-300">New Arrival</a></li>
                 <li><a href="#MostWanted" class="hover:border-b-2 hover:border-black transition duration-300">Most Wanted</a></li>
-                <li><a href="#Collection" class="hover:border-b-2 hover:border-black transition duration-300">Collections</a></li>
+                <li><a href="./collection.html" class="hover:border-b-2 hover:border-black transition duration-300">Collections</a></li>
                 <li><a href="./contactus.html" class="hover:border-b-2 hover:border-black transition duration-300">Contact Us</a></li>
             </ul>
         </div>
@@ -33,9 +33,9 @@
     <!-- Slider Section -->
     <section id="Home"class="relative overflow-hidden">
         <div id="slider" class="flex transition-transform duration-500">
-            <img src="./images/MEns.avif" class="min-w-full h-[500px] object-cover">
-            <img src="./images/Mens_Tshirt.avif" class="min-w-full h-[500px] object-cover">
-            <img src="./images/Sneaker.avif" class="min-w-full h-[500px] object-cover">
+            <img src="./images/MEns.avif" class="min-w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover">
+            <img src="./images/Mens_Tshirt.avif" class="min-w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover">
+            <img src="./images/Sneaker.avif" class="min-w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover">
         </div>
         <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:opacity-70 transition duration-300">&#8249;</button>
         <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:opacity-70 transition duration-300">&#8250;</button>
@@ -47,12 +47,12 @@
     <!-- BRAND / Official Merch Section -->
     <section class="px-8 py-8 bg-white">
         <h2 class="text-xl font-bold mb-6 uppercase tracking-widest text-gray-700">Official Merch</h2>
-        <div class="flex justify-between gap-4">
-            <img src="./images/DC.avif" alt="DC Merch" class="w-24 h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
-            <img src="./images/Demon_slayer_GPQ21FC.avif" alt="Demon Slayer Merch" class="w-24 h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
-            <img src="./images/MARVEL.avif" alt="Marvel Merch" class="w-24 h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
-            <img src="./images/batman_74y5mVB.avif" alt="Batman Merch" class="w-24 h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
-            <img src="./images/One-Piece-Anime--square-200x200.avif" alt="One Piece Merch" class="w-24 h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
+        <div class="grid grid-cols-3 sm:grid-cols-5 gap-3 justify-items-center">
+            <img src="./images/DC.avif" alt="DC Merch" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
+            <img src="./images/Demon_slayer_GPQ21FC.avif" alt="Demon Slayer Merch" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
+            <img src="./images/MARVEL.avif" alt="Marvel Merch" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
+            <img src="./images/batman_74y5mVB.avif" alt="Batman Merch" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
+            <img src="./images/One-Piece-Anime--square-200x200.avif" alt="One Piece Merch" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-xl shadow-sm hover:scale-105 transition duration-300">
         </div>
     </section>
 
@@ -60,16 +60,14 @@
     <hr class="border-gray-200 mx-6">
 
     <!-- INFORMATION Section -->
-    <section class="px-8 py-10 flex justify-between items-center gap-6">
-        <h3 class="text-3xl font-semibold max-w-[380px] leading-snug">
-            We Provide Best <br> Customer Experiences
-        </h3>
-        <div class="w-1 h-16 bg-gray-300 rounded"></div>
-        <p class="text-lg text-gray-600 max-w-sm">
-            We ensure that our customers have the best shopping experience every single time they visit us.
-        </p>
-    </section>
-
+    <section class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+      <h3 class="text-2xl md:text-3xl">...</h3>
+     
+      <div class="hidden md:block w-px h-16 bg-gray-300"></div>
+      
+      <div class="md:hidden w-full h-px bg-gray-300 max-w-[80%]"></div>
+      <p class="text-base md:text-lg">...</p>
+  </section>
     <!-- DIVIDER -->
     <hr class="border-gray-200 mx-6">
 
@@ -111,7 +109,7 @@
     <section id = "New" class="px-8 py-10 bg-white">
         <h2 class="text-xl font-bold mb-6 uppercase tracking-widest text-gray-700">New Arrival</h2>
       
-        <div class="flex gap-4 justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
     
           <div class="group relative overflow-hidden rounded-xl shadow-md flex-1">
             <img class="w-full h-[350px] object-cover group-hover:scale-105 transition duration-500" 
@@ -158,92 +156,80 @@
         </div>
       </section>
 
-      <section id = "MostWanted" class="px-8 py-10 bg-white">
+      <section id="MostWanted" class="px-4 md:px-8 py-10 bg-white">
         <h2 class="text-xl font-bold mb-6 uppercase tracking-widest text-gray-700">Most Wanted</h2>
-      
-        <div class="flex gap-4 overflow-x-auto pb-4">
-      
-          <!-- Card with SALE badge -->
-          <div class="relative min-w-[300px] overflow-hidden rounded-xl shadow-md">
-            <img src="./images/MW1.avif" class="w-full h-[350px] object-cover">
-            <h2 class="absolute top-3 right-3 bg-red-600 text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
-              <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
-              Sale
-            </h2>
-            <i id= "heart" class="absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
-          </div>
-      
-          <div class="relative min-w-[300px] overflow-hidden rounded-xl shadow-md">
-            <img src="./images/MW2.avif" class="w-full h-[350px] object-cover">
-            <h2 class="absolute top-3 right-3 bg-red-600 text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
-                <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
-                Sale
-              </h2>
-              <i id= "heart" class="absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
-          </div>
-          <div class="relative min-w-[300px] overflow-hidden rounded-xl shadow-md">
-            <img src="./images/MW3.avif" class="w-full h-[350px] object-cover">
-            <h2 class="absolute top-3 right-3 bg-red-600 text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
-                <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
-                Sale
-              </h2>
-              <i id= "heart" class="absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
-          </div>
-          <div class="relative min-w-[300px] overflow-hidden rounded-xl shadow-md">
-            <img src="./images/MW4.avif" class="w-full h-[350px] object-cover">
-            <h2 class="absolute top-3 right-3 bg-red-600 text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
-                <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
-                Sale
-              </h2>
-              <i id= "heart" class="absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
-          </div>
-          <div class="relative min-w-[300px] overflow-hidden rounded-xl shadow-md">
-            <img src="./images/new_arrival_3.avif" class="w-full h-[350px] object-cover">
-            <h2 class="absolute top-3 right-3 bg-red-600 text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
-                <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
-                Sale
-              </h2>
-              <i id= "heart" class="absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
-          </div>
-          <div class="relative min-w-[300px] overflow-hidden rounded-xl shadow-md">
-            <img src="./images/new_arrival1.avif" class="w-full h-[350px] object-cover">
-            <h2 class="absolute top-3 right-3 bg-red-600 text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
-                <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
-                Sale
-              </h2>
-              <i id= "heart" class="absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
-          </div>
-          <div class="relative min-w-[300px] overflow-hidden rounded-xl shadow-md">
-            <img src="./images/newarival5.avif" class="w-full h-[350px] object-cover">
-            <h2 class="absolute top-3 right-3 bg-red-600 text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
-                <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
-                Sale
-              </h2>
-              <i id= "heart" class="absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
-          </div>
-          <div class="relative min-w-[300px] overflow-hidden rounded-xl shadow-md">
-            <img src="./images/newarrival_4.avif" class="w-full h-[350px] object-cover">
-            <h2 class="absolute top-3 right-3 bg-red-600 text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
-                <span class="inline-flex h-2 w-2 rounded-full bg-white"></span>
-                Sale
-              </h2>
-              <i id= "heart" class="absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
-          </div>
-      
+        <div class="flex gap-5 overflow-x-auto pb-4 scrollbar-thin">
+            <!-- card 1 -->
+            <div class="relative min-w-[260px] sm:min-w-[280px] md:min-w-[300px] overflow-hidden rounded-xl shadow-md flex-shrink-0">
+                <img src="./images/MW1.avif" class="w-full h-[320px] object-cover" alt="product">
+                <span class="absolute top-3 right-3 bg-red-600 text-xs sm:text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-white"></span> Sale
+                </span>
+                <i class="heart-icon absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
+            </div>
+            <div class="relative min-w-[260px] sm:min-w-[280px] md:min-w-[300px] overflow-hidden rounded-xl shadow-md flex-shrink-0">
+                <img src="./images/MW2.avif" class="w-full h-[320px] object-cover" alt="product">
+                <span class="absolute top-3 right-3 bg-red-600 text-xs sm:text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-white"></span> Sale
+                </span>
+                <i class="heart-icon absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
+            </div>
+            <div class="relative min-w-[260px] sm:min-w-[280px] md:min-w-[300px] overflow-hidden rounded-xl shadow-md flex-shrink-0">
+                <img src="./images/MW3.avif" class="w-full h-[320px] object-cover" alt="product">
+                <span class="absolute top-3 right-3 bg-red-600 text-xs sm:text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-white"></span> Sale
+                </span>
+                <i class="heart-icon absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
+            </div>
+            <div class="relative min-w-[260px] sm:min-w-[280px] md:min-w-[300px] overflow-hidden rounded-xl shadow-md flex-shrink-0">
+                <img src="./images/MW4.avif" class="w-full h-[320px] object-cover" alt="product">
+                <span class="absolute top-3 right-3 bg-red-600 text-xs sm:text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-white"></span> Sale
+                </span>
+                <i class="heart-icon absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
+            </div>
+            <div class="relative min-w-[260px] sm:min-w-[280px] md:min-w-[300px] overflow-hidden rounded-xl shadow-md flex-shrink-0">
+                <img src="./images/new_arrival_3.avif" class="w-full h-[320px] object-cover" alt="product">
+                <span class="absolute top-3 right-3 bg-red-600 text-xs sm:text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-white"></span> Sale
+                </span>
+                <i class="heart-icon absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
+            </div>
+            <div class="relative min-w-[260px] sm:min-w-[280px] md:min-w-[300px] overflow-hidden rounded-xl shadow-md flex-shrink-0">
+                <img src="./images/new_arrival1.avif" class="w-full h-[320px] object-cover" alt="product">
+                <span class="absolute top-3 right-3 bg-red-600 text-xs sm:text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-white"></span> Sale
+                </span>
+                <i class="heart-icon absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
+            </div>
+            <div class="relative min-w-[260px] sm:min-w-[280px] md:min-w-[300px] overflow-hidden rounded-xl shadow-md flex-shrink-0">
+                <img src="./images/newarival5.avif" class="w-full h-[320px] object-cover" alt="product">
+                <span class="absolute top-3 right-3 bg-red-600 text-xs sm:text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-white"></span> Sale
+                </span>
+                <i class="heart-icon absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
+            </div>
+            <div class="relative min-w-[260px] sm:min-w-[280px] md:min-w-[300px] overflow-hidden rounded-xl shadow-md flex-shrink-0">
+                <img src="./images/newarrival_4.avif" class="w-full h-[320px] object-cover" alt="product">
+                <span class="absolute top-3 right-3 bg-red-600 text-xs sm:text-sm text-white px-3 py-1 rounded-md flex items-center gap-2">
+                    <span class="inline-flex h-2 w-2 rounded-full bg-white"></span> Sale
+                </span>
+                <i class="heart-icon absolute bottom-3 right-3 fa-regular fa-heart text-white text-xl cursor-pointer"></i>
+            </div>
         </div>
-      </section>
+    </section>
 
       <!-- Limited Section -->
 
-      <section class="bg-red-500 px-5 py-8 flex items-center gap-6">
+      <section class="bg-red-500 px-5 py-8 fflex flex-col md:flex-row items-center gap-6">
   
        
-        <div class="flex-1">
+        <div class="flex-1 w-full">
           <img src="./images/Mens_Tshirt.avif" class="w-[100%] h-[350px] object-cover rounded-xl" alt="">
         </div>
       
     
-        <div class="flex-1 flex flex-col gap-6">
+        <div class="flex-1 text-center md:text-left">
           <p class="text-2xl font-bold text-white">
             Limited Offer <br>
             35% OFF on this for the first 30 Customers
@@ -261,12 +247,12 @@
           <h1 class="text-4xl font-bold">Join Our Newsletter</h1>
           <p class="text-gray-500 text-lg">Signup for our email newsletter to get exclusive discounts, updates, and more</p>
 
-          <div class="flex w-full mt-4">
+          <div class="flex w-full flex-col sm:flex-row mt-4">
             <input 
               type="text" 
               placeholder="Enter your email address..."
-              class="border border-gray-300 px-4 py-3 rounded-l-lg w-full outline-none focus:border-red-500 transition">
-            <button class="bg-red-500 text-white font-bold px-6 py-3 rounded-r-lg hover:bg-red-600 transition">
+              class="border border-gray-300 px-4 py-3 rounded-lg sm:rounded-l-lg sm:rounded-r-none w-full outline-none focus:border-red-500 transition">
+            <button class="bg-red-500 text-white font-bold px-6 py-3 ounded-lg sm:rounded-r-lg sm:rounded-l-none mt-2 sm:mt-0 hover:bg-red-600 transition">
               Subscribe
             </button>
           </div>
@@ -279,7 +265,7 @@
 
       <footer class="bg-red-500 text-white px-8 py-12">
   
-        <div class="flex justify-between gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       
           <!-- Brand -->
           <div class="flex flex-col gap-3">

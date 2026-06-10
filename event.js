@@ -33,3 +33,5 @@ heart.addEventListener('click',function ()
     heart.classList.toggle('text-white')
     heart.classList.toggle('text-red-500')
 })
+
+

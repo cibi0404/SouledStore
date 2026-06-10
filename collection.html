@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souled Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="font-serif">
+   <!-- Offer Section -->
+   <div id="offerbar" class="bg-black flex justify-center items-center text-black text-sm py-2 gap-4">
+    <p class="text-white">Sign Up and <b class="text-red-500">GET 20% OFF</b> for your first Order</p>
+    <i id="offerclose" class="text-white fa-solid fa-xmark cursor-pointer hover:opacity-70"></i>
+</div>
+
+<!-- Header Section -->
+<header  class="p-2 sticky top-0 z-10 bg-white shadow-md">
+    <div class="flex flex-wrap justify-between items-center gap-4 text-black">
+        <h2 class="text-4xl font-bold">Souled Store</h2>
+        <ul class="flex flex-wrap justify-center gap-4 md:gap-8">
+            <li><a href="./index.html" class="hover:border-b-2 hover:border-black transition duration-300">Home</a></li>
+            <li><a href="#New" class="hover:border-b-2 hover:border-black transition duration-300">New Arrival</a></li>
+            <li><a href="#MostWanted" class="hover:border-b-2 hover:border-black transition duration-300">Most Wanted</a></li>
+            <li><a href="./collection.html" class="hover:border-b-2 hover:border-black transition duration-300">Collections</a></li>
+            <li><a href="./contactus.html" class="hover:border-b-2 hover:border-black transition duration-300">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+    <section class="flex gap-10 px-10">
+    <div class="mt-6 mb-6 border-r-2 border-black pr-6 min-h-screen">
+        <div class="p-4">
+            <h2 class="text-2xl font-bold mb-3 underline text-red-500">Categories</h2>
+            <div id="category-filters" class="flex flex-col items-start gap-3">
+                <label><input type="checkbox" value="tshirt"> T-Shirt</label>
+                <label><input type="checkbox" value="oversized"> Over-sized</label>
+                <label><input type="checkbox" value="summer-tshirt"> Summer T-shirt</label>
+                <label><input type="checkbox" value="shirt"> Shirt</label>
+            </div>
+        </div>
+
+        <div class="p-4">
+            <h2 class="text-2xl font-bold mb-3 underline text-red-500">Colours</h2>
+            <div id="color-filters" class="flex flex-col items-start gap-3">
+                <label><input type="checkbox" value="red"> Red</label>
+                <label><input type="checkbox" value="blue"> Blue</label>
+                <label><input type="checkbox" value="white"> White</label>
+                <label><input type="checkbox" value="black"> Black</label>
+            </div>
+        </div>
+
+        <div class="p-4">
+            <h2 class="text-2xl font-bold mb-3 underline text-red-500">Size</h2>
+            <div id="size-filters" class="flex flex-col items-start gap-3">
+                <label><input type="checkbox" value="S"> S</label>
+                <label><input type="checkbox" value="M"> M</label>
+                <label><input type="checkbox" value="L"> L</label>
+                <label><input type="checkbox" value="XL"> XL</label>
+                <label><input type="checkbox" value="XXL"> XXL</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 px-10 grid grid-cols-3 gap-7">
+
+        <div class="flex flex-col items-center w-[300px]" data-category="tshirt" data-color="white" data-size="M">
+            <img class="w-[250px] h-[300px] object-cover rounded-xl" src="./images/new_arrival1.avif">
+            <h3 class="text-xl mt-3 text-center">TSS Originals: 13 Years Strong</h3>
+            <p class="text-lg">₹ 1399</p>
+        </div>
+
+        <div class="flex flex-col items-center w-[300px]" data-category="oversized" data-color="black" data-size="L">
+            <img class="w-[250px] h-[300px] object-cover rounded-xl" src="images/new_arrival_3.avif">
+            <h3 class="text-xl mt-3 text-center">TSS Originals</h3>
+            <p class="text-lg">₹ 1399</p>
+        </div>
+
+        <div class="flex flex-col items-center w-[300px]" data-category="shirt" data-color="black" data-size="XL">
+            <img class="w-[250px] h-[300px] object-cover rounded-xl" src="images/MW4.avif">
+            <h3 class="text-xl mt-3 text-center">Solids: Regal Black</h3>
+            <p class="text-lg">₹ 999</p>
+        </div>
+
+        <div class="flex flex-col items-center w-[300px]" data-category="tshirt" data-color="red" data-size="S">
+            <img class="w-[250px] h-[300px] object-cover rounded-xl" src="images/MW1.avif">
+            <h3 class="text-xl mt-3 text-center">Bloom: Believe</h3>
+            <p class="text-lg">₹ 899</p>
+        </div>
+
+        <div class="flex flex-col items-center w-[300px]" data-category="summer-tshirt" data-color="blue" data-size="M">
+            <img class="w-[250px] h-[300px] object-cover rounded-xl" src="images/newarival5.avif">
+            <h3 class="text-xl mt-3 text-center">Superman: Blue Suit</h3>
+            <p class="text-lg">₹ 1499</p>
+        </div>
+
+        <div class="flex flex-col items-center w-[300px]" data-category="oversized" data-color="white" data-size="XXL">
+            <img class="w-[250px] h-[300px] object-cover rounded-xl" src="images/new_arrival_3.avif">
+            <h3 class="text-xl mt-3 text-center">TSS Originals: Trident</h3>
+            <p class="text-lg">₹ 999</p>
+        </div>
+
+    </div>
+</section>
+
+    <footer class="bg-red-500 text-white px-8 py-12">
+  
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+          <!-- Brand -->
+          <div class="flex flex-col gap-3">
+            <h2 class="text-2xl font-bold">Souled Store</h2>
+            <p class="text-white/80 text-sm max-w-[200px]">Your one stop shop for official fan merchandise.</p>
+            <div class="flex gap-4 mt-2">
+              <i class="fa-brands fa-instagram text-xl cursor-pointer hover:text-white/70 transition"></i>
+              <i class="fa-brands fa-facebook text-xl cursor-pointer hover:text-white/70 transition"></i>
+              <i class="fa-brands fa-twitter text-xl cursor-pointer hover:text-white/70 transition"></i>
+            </div>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="flex flex-col gap-3">
+            <h3 class="font-bold text-lg uppercase tracking-widest">Quick Links</h3>
+            <a href="#" class="text-white/80 hover:text-white transition text-sm">Home</a>
+            <a href="#" class="text-white/80 hover:text-white transition text-sm">New Arrival</a>
+            <a href="#" class="text-white/80 hover:text-white transition text-sm">Most Wanted</a>
+            <a href="#" class="text-white/80 hover:text-white transition text-sm">Collections</a>
+          </div>
+      
+          <!-- Help -->
+          <div class="flex flex-col gap-3">
+            <h3 class="font-bold text-lg uppercase tracking-widest">Help</h3>
+            <a href="#" class="text-white/80 hover:text-white transition text-sm">FAQs</a>
+            <a href="#" class="text-white/80 hover:text-white transition text-sm">Track Order</a>
+            <a href="#" class="text-white/80 hover:text-white transition text-sm">Return Policy</a>
+            <a href="#" class="text-white/80 hover:text-white transition text-sm">Contact Us</a>
+          </div>
+      
+          <!-- Newsletter -->
+          <div class="flex flex-col gap-3">
+            <h3 class="font-bold text-lg uppercase tracking-widest">Newsletter</h3>
+            <p class="text-white/80 text-sm">Get deals straight to your inbox.</p>
+            <div class="flex">
+              <input type="text" placeholder="Enter your email" 
+                     class="px-4 py-2 rounded-l-lg text-black text-sm outline-none w-[200px]">
+              <button class="bg-white text-red-500 font-bold px-4 py-2 rounded-r-lg hover:bg-red-100 transition">
+                Join
+              </button>
+            </div>
+          </div>
+      
+        </div>
+      
+        <!-- Divider -->
+        <hr class="border-white/30 my-8">
+      
+        <!-- Bottom -->
+        <div class="flex justify-between items-center text-sm text-white/70">
+          <p>© 2024 Souled Store. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition">Terms of Service</a>
+          </div>
+        </div>
+      
+      </footer>
+   <script src="./collection.js"></script>
+    
+</body>
