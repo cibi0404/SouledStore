@@ -47,3 +47,33 @@
         checkbox.addEventListener('change', filterProducts);
     });
     
+
+    const products = document.querySelectorAll('[data-category]');
+
+        function filterProducts(query) {
+            query = query.trim().toLowerCase();
+            let visible = 0;
+
+            products.forEach(card => {
+                const category = (card.dataset.category || '').toLowerCase();
+                const color    = (card.dataset.color || '').toLowerCase();
+                const size     = (card.dataset.size || '').toLowerCase();
+                const name     = (card.querySelector('h3')?.textContent || '').toLowerCase();
+
+                const match = !query ||
+                    category.includes(query) ||
+                    color.includes(query) ||
+                    size.includes(query) ||
+                    name.includes(query);
+
+                card.style.display = match ? '' : 'none';
+                if (match) visible++;
+            });
+
+            document.getElementById('no-results').classList.toggle('hidden', visible > 0);
+            document.getElementById('no-results-desktop').classList.toggle('hidden', visible > 0);
+        }
+
+        document.getElementById('search-input').addEventListener('input', e => filterProducts(e.target.value));
+        document.getElementById('search-input-desktop').addEventListener('input', e => filterProducts(e.target.value));
+    
