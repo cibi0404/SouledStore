@@ -185,5 +185,39 @@
 
     </footer>
 
+    <script>
+        document.querySelector('button').addEventListener('click', async () => {
+      
+          const firstName = document.querySelectorAll('input')[0].value
+          const lastName  = document.querySelectorAll('input')[1].value
+          const email     = document.querySelectorAll('input')[2].value
+          const subject   = document.querySelectorAll('input')[3].value
+          const message   = document.querySelector('textarea').value
+      
+          if (!firstName || !email || !message) {
+            alert('Please fill all fields!')
+            return
+          }
+      
+          const response = await fetch('http://localhost:5678/webhook/contact-form', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              name: firstName + ' ' + lastName,
+              email: email,
+              subject: subject,
+              message: message
+            })
+          })
+      
+          if (response.ok) {
+            alert('Message sent successfully!')
+          } else {
+            alert('Something went wrong!')
+          }
+      
+        })
+      </script>
+
 </body>
 </html>
